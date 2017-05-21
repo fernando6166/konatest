@@ -1,0 +1,114 @@
+<script>
+
+window.alert("submitfirst");
+ 
+
+
+</script>
+<div class="scrollable" ng-controller="EmployeeController"> 
+    <div class="scrollable-content" style="margin-left:200px" >
+        <!-- Add the cards here -->
+      <form  >
+      <table>
+        <tr>
+            <th>&nbsp</th>
+         <tr>
+            
+        <tr >
+            <th style="font-size:25px;color:black;letter-spacing: 2px;font-family: Arial;">Add Employee</th>
+         
+          <tr>
+            <th>&nbsp</th>
+         <tr>
+        <tr class="sector" style="border-bottom: 1px solid white;">
+          <th >Basic</th> 
+        </tr>
+
+          <tr>
+            <th>&nbsp</th>
+         <tr>
+        <tr > 
+        <th>
+             <label value="First Name" />
+      	 <input type="input" class="form-control employee" ng-keypress="search($event)"
+             placeholder="First Name" ng-model="employee.first"/>
+       </th>
+       </tr>
+          <tr>
+            <th>&nbsp</th>
+         <tr>
+       <tr>
+       
+       <th>
+             <label value="Last Name" />
+             <input type="input" class="form-control employee" ng-keypress="search($event)"
+             placeholder="Last Name" ng-model="employee.last"/>
+       </th>
+       <tr/>
+          <tr>
+            <th>&nbsp</th>
+         <tr>
+
+       <td>
+             <label value="Created" />
+         <input type="Date" class="form-control employee" ng-keypress="search($event)"
+             placeholder="Created" ng-model="employee.created" />
+       </td>
+
+
+       <tr>
+        <tr class="sector" style="border-bottom: 1px solid white;">
+          <th>Address</th> 
+        </tr>
+
+       
+       <tr>
+            <th>&nbsp</th>
+       <tr>
+       <td>
+         <label value="Address" />
+         <input type="input" class="form-control employee" ng-keypress="search($event)"
+         placeholder="Address" ng-model="employee.address" />
+       </td>
+      
+        <tr>
+            <th>&nbsp</th>
+         <tr>
+        <tr class="sector" style="border-bottom: 1px solid white;">
+          <th>Contact Info</th> 
+        </tr>    
+     
+         <tr>
+            <th>&nbsp</th>
+         <tr>
+        <td>
+         <label value="Email" />
+         <input type="input" class="form-control employee"  ng-keypress="search($event)"
+         placeholder="email" ng-model="employee.email"/>
+       </td>
+        <tr>
+            <th>&nbsp</th>
+         <tr>
+        
+       <td>
+               <label value="Balance" />
+      	   <input type="input" class="form-control employee" ng-keypress="search($event)" ng-model="employee.balance"  
+             placeholder="Balance"/>
+      </td>
+         <tr>
+            <th>&nbsp</th>
+         <tr>
+	  </tr>   
+	</table>
+  <a href="../app/#/" style="font-size:20px" class="buttonSend" onclick="window.alert('Empleado creado con éxito');" ng-click="sendEmployee();"; 
+        >Enviar</a>
+  </form>	
+
+    </div>
+
+
+</body>
+</html>
+</div>
+
+  

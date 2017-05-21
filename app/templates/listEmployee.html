@@ -1,0 +1,43 @@
+<input type="search" class="form-control app-search" ng-model="searchText" ng-keypress="search($event)"
+       placeholder="Search.." value="first"  />
+
+<div class="scrollable">
+    <div class="scrollable-content">
+        <!-- Add the cards here -->
+          <div class="span9 fm-panel fm-employee-list">
+  
+    <table class="table table-hover table-striped">
+      <tr>
+        <th><a href ng-click="sortBy('first')">First Name {{sortIconFor('first')}}</a></th>
+        <th><a href ng-click="sortBy('last')">Last Name {{sortIconFor('last')}}</a></th>
+        <th><a href ng-click="sortBy('email')">Email {{sortIconFor('email')}}</a></th>
+        <th><a href ng-click="sortBy('address')">Address {{sortIconFor('address')}}</a></th>
+        <th><a href ng-click="sortBy('created')">Created {{sortIconFor('created')}}</a></th>      
+        <th><a href ng-click="sortBy('balance')">Balance {{sortIconFor('balance')}}</a></th>
+      <tr ng-repeat="employee in employees | filter:searchText"> 
+        <td>
+            <b>{{employee.first}}</b>
+        </td>
+        <td>
+            <b>{{employee.last}}</b>  
+        </td>
+        <td>
+            <b>{{employee.email}}</b>
+        </td>
+        <td>
+            <b>{{employee.address}}</b>  
+        </td>
+        <td>
+            <b>{{employee.created}}</b>
+        </td>
+        <td>
+            <b>{{employee.balance}}</b>  
+        </td>   
+      </tr>
+    </table>
+  </div>
+
+
+    </div>
+</div>
+
